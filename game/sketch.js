@@ -11,9 +11,13 @@ function preload() {
 
 }
 function setup() {
-  createCanvas(800, 450);
+  createCanvas(windowWidth, windowHeight);
   player = new Player();
 
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function keyPressed() {
