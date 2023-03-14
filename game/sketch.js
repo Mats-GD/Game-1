@@ -1,19 +1,29 @@
-let unicorn;
+let player;
+let pImg;
+let oImg;
+let bImg;
+
+function preload() {
+  pImg = loadImage('../images/player.png');
+  oImg = loadImage('../images/obstacle.png');
+  bImg = loadImage('../images/backgrnd.png');
+
+}
 function setup() {
-  createCanvas(400, 400);
-  unicorn = new Unicorn();
+  createCanvas(800, 450);
+  player = new Player();
 
 }
 
 function keyPressed() {
   if (key == ' ') {
-    unicorn.jump();
+    player.jump();
   }
 }
 
 
 function draw() {
-  background(220);
-  unicorn.show();
-  unicorn.move();
+  background(bImg);
+  player.show();
+  player.move();
 }

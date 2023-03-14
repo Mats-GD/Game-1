@@ -1,7 +1,7 @@
-class Unicorn {
+class Player {
     constructor() {
-        this.r = 50;
-        this.x = this.r;
+        this.r = 100;
+        this.x = 50;
         this.y = height - this.r;
         this.vy = 0;
         this.gravity = 2;
@@ -18,6 +18,6 @@ class Unicorn {
     }
 
     show() {
-        rect(this.x, this.y, this.r, this.r);
+        image(pImg, this.x, this.y, this.r, this.r)
     }
 }
