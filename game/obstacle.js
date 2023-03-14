@@ -1,7 +1,7 @@
 class Obstacle {
 
     constructor() {
-        this.r = 100;
+        this.r = 70;
         this.x = width;
         this.y = height - this.r;
     }

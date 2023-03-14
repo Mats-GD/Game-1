@@ -1,6 +1,6 @@
 class Player {
     constructor() {
-        this.r = 150;
+        this.r = 100;
         this.x = 50;
         this.y = height - this.r;
         this.vy = 0;
@@ -8,7 +8,7 @@ class Player {
     }
 
     jump() {
-        if (this.y == height-this.r) {
+        if (this.y == height - this.r) {
             this.vy = -35;
         }
     }
